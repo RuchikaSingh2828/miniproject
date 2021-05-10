@@ -34,8 +34,8 @@ var addRoutes = function(app){
 exports.init = function(app){
     addRoutes(app);
     
-    http.createServer(app).listen(3000, "localhost", function(){
-        console.log('Express server listening on port 3000');
+    http.createServer(app).listen(8000, "localhost", function(){
+        console.log('Express server listening on port 8000');
     });
 };
 

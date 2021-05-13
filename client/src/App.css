@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #3f51b5;
   --darker-main-bg-color: #283891;
+ 
 }
 
 .centered { 
@@ -10,12 +11,32 @@
   transform: translate(-50%, -50%);
 }
 
+.center{
+  justify-content: center !important;
+}
+
 
 .button, button:focus:not(:focus-visible) {
   background-color: var(--main-bg-color) !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .button:focus {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 10px 25px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+.container{
+  display: flex;
+  order: 2;
+  flex-direction: row;
+  justify-content: space-between;
+  color:grey;
+}
+.container-center{
+  display: flex;
+  order: 2;
+  flex-direction: row;
+  justify-content: center;
+  color:grey;
 }

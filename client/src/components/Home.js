@@ -1,13 +1,11 @@
-// import '../App.css';
+import React, {useState} from 'react';
+import { useHistory } from "react-router-dom";
 import Button from './Button';
 import Modal from './Modal';
 import Form from './Form';
-import Confirmation from './Confirmation';
 import ChooseCard from './ChooseCard';
-import { useHistory } from "react-router-dom";
 
 
-import React, {useState} from 'react';
 
 function Home() {
   const [isModalOpen, updateIsModalOpen] = useState(false);

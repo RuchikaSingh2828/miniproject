@@ -1,7 +1,6 @@
 import { Form, Button} from 'react-bootstrap';
 import moment from 'moment';
 import axios from 'axios'
-// import Button from './Button';
 import React, { useState } from 'react';
 
 const CreateProjectForm = (props) => {

@@ -40,3 +40,53 @@
   justify-content: center;
   color:grey;
 }
+
+.cards{
+  /* order: 2; */
+  flex-direction: row !important;
+  justify-content: space-between;
+  color:grey;
+  padding: 1.2em;
+}
+
+.content-end{
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: end;
+  /* color:grey; */
+}
+
+.text-blue{
+  color: rgb(62, 108, 209);
+  /* background-color: chartreuse; */
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color:grey;
+  align-items: flex-end;
+}
+
+
+.page-card{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.main-price{
+  color: var(--main-bg-color);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.small-text{
+  font-size: x-small;
+  color:rgb(167, 167, 167)
+}
+
+.grey-text{
+  color: grey;
+}

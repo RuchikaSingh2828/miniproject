@@ -1,5 +1,6 @@
 import {Modal} from 'react-bootstrap';
-import React from 'react'
+import React from 'react';
+
 
 
 const CreateProjModalUI = (props) => {
@@ -7,9 +8,9 @@ const CreateProjModalUI = (props) => {
 
     return (
       // <h1> Modal </h1>
-      <Modal {...props} centered size="lg" >
+      <Modal show={props.show} onHide={props.onHide} centered size="lg" >
       <Modal.Header closeButton>
-        <Modal.Title>Create Project</Modal.Title>
+        <Modal.Title>{props.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {/* {props.children(props.onHide)} */}

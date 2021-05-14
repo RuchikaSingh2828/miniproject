@@ -61,8 +61,6 @@ const CreateProjectForm = (props) => {
     }).catch(function (error){
         props.onHide(false);
     });
-
-  
     return true;
     };
 
@@ -132,11 +130,11 @@ const CreateProjectForm = (props) => {
             <br/>
             <div className="container mb-3">
                 <label>Cleverex transaction fees (20%)</label>
-                <span> $0.00 </span>
+                <span> ${(+projectCost*0.2).toFixed(2)}</span>
             </div>
             <div className="container">
                 <label>Total amount in $USD</label>
-                <span> $0.00 </span>
+                <span> ${(+projectCost*0.2 + +projectCost).toFixed(2)} </span>
             </div>
         </Form>
         <div className="container-center">
